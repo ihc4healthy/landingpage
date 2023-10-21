@@ -1,0 +1,104 @@
+
+
+body {
+   margin: 0;
+   font-family: 'Inter', sans-serif;
+}
+
+.container {
+   /*padding: 0px 5%;*/
+}
+
+nav {
+   position: absolute;
+}
+
+/* HOME */
+.home {
+   background-image: url("resource/backHome.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+.home .row .column{
+   display: inline-block;
+   vertical-align: middle;
+}
+.home .row .col1 {
+   width: 70%;
+}
+.home .row .col1 img{
+   height: 80vh;
+}
+
+.home .row .col2 {
+   width: 25%;
+   text-align: center;
+}
+.calltoaction {
+   width: 356px;
+   height: 291px;
+   background-color: white;
+   border-radius: 25px;
+   padding: 25px;
+}
+
+.calltoaction .button {
+   background-color: #F5D00B;
+   width: 285px;
+   border-radius: 10px;
+   padding: 10px 0;
+}
+.calltoaction .button span{
+   padding: 0px auto;
+}
+
+/* Contactanos */
+.frase {
+   text-align: center;
+   font-size: 28px;
+}
+.social p {
+   font-size: 30px;
+   font-weight: 700;
+}
+.contactanos p {
+   
+}
+
+.contactanos .row .column{
+   display: inline-block;
+   width: 30%;
+   vertical-align: middle;
+}
+.contactanos .social {
+   align-items: center;
+   text-align: center;
+}
+.linksredes i{
+   margin: 5px 10px;
+   font-size: 45px;
+   color: black;
+}
+
+
+footer {
+   background-color: #F3F3F4;
+   padding: 10px 5%;
+}
+
+footer > div {
+   display: inline-block;
+   vertical-align: middle;
+   width: 30%;
+}
+footer .logo { 
+   text-align: left;
+}
+footer .derechos{
+   text-align: center;
+}
+
+footer .terminos{
+   text-align: end;
+}
