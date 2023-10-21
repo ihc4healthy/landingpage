@@ -1,60 +1,99 @@
-
-
-body {
+body{
    margin: 0;
-   font-family: 'Inter', sans-serif;
+   padding: 0;
+   background-image: url("resource/backHome.png");
+   background-size:cover;
+
+   background-repeat: no-repeat;
+   font-size: medium;
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
-.container {
-   /*padding: 0px 5%;*/
+/* NAV BAR */
+header {
+   padding: 15px 15px;
+   background-color: transparent;
+   display: flex;
+   justify-content:space-between;
+}
+header .navbar{
+   padding: 0px 20px; 
+   list-style-type: none;
+   text-align: right;
+   display: flex;
+   font-size: 20px;
+  
+}
+.LogoTipe{
+   margin: 0 0;
+   padding: 0 0;
+   scale: 0.7 0.7;
 }
 
-nav {
-   position: absolute;
+.navselec{
+   padding: 0px 20px; 
+   text-decoration: none;
+   color: #242B38;
 }
 
 /* HOME */
-.home {
-   background-image: url("resource/backHome.png");
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 100vh;
-}
-.home .row .column{
+
+
+.joinBox{
+   padding: 20px ;
+   margin-right: 5%;
+   margin-top: 7%;
+   background-color:#FFFFFF;
+   border: 0.2px transparent black;
+   border-radius: 50px;
    display: inline-block;
-   vertical-align: middle;
-}
-.home .row .col1 {
-   width: 70%;
-}
-.home .row .col1 img{
-   height: 80vh;
-}
+   width: 340px;
+   height: 260px;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 
-.home .row .col2 {
-   width: 25%;
+}
+.joinBox h1{
+   color: #242B38;
+   font-size: 30px;
+   padding:20px 30px;
    text-align: center;
+
 }
-.calltoaction {
-   width: 356px;
-   height: 291px;
-   background-color: white;
-   border-radius: 25px;
-   padding: 25px;
+.joinBox input[type=button]{
+   margin: 20px 20px;
+   padding: 15px 80px;
+   text-align:center;
+   background-color: #F5D00B;
+   border: none;
+   border-radius: 8px;
+   font-weight: bold;
+   cursor: pointer;
+   
 }
 
-.calltoaction .button {
-   background-color: #F5D00B;
-   width: 285px;
-   border-radius: 10px;
-   padding: 10px 0;
+.color-sky{
+   color:rgb(28, 127, 166);
 }
-.calltoaction .button span{
-   padding: 0px auto;
+
+.color-yellow{
+   color:#d7b90b;
+}
+
+.cont1{
+   display: flex;
+   justify-self: start;
+   justify-content:space-between;
+   align-items: flex-start;
+}
+.cont1 img{
+   padding: 0% 12%;
+   width:64%;
+   height: auto;
 }
 
 /* Contactanos */
 .frase {
+   margin-top: 120px;
    text-align: center;
    font-size: 28px;
 }
