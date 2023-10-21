@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+   --primary-light: #fce978;
+   --primary-main: #fbd254;
+   --primary-dark: #eca540;
+   --secondary-light: #00d9f4;
+   --secondary-main: #009ed5;
+   --secondary-dark: #3b719f;
+   --text-primary: #222b36;
+   --text-secondary: #7a8291;
+   --text-disabled: #c5c8cf;
+   --background-back: #fafbfc;
+   --background-paper: #ffffff;
+   --background-disabled: #e2e7ec;
+   --state-info: #75baf6;
+   --state-success: #00ebab;
+   --state-warning: #000000;
+   --state-danger: #ee252b;
+   --shadow-lvl1: 0px 0px 4pt rgba(0, 0, 0, 0.3);
+   --shadow-lvl2: 0px 0px 8pt rgba(0, 0, 0, 0.3);
+   --shadow-lvl3: 0px 0px 16pt rgba(0, 0, 0, 0.3);
+   --font-headings: 'Poppins', 'Inter', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   --font-display: 'Inter', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   color: var(--text-primary);
+   background-image: url("../assets/backHome.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-size: medium;
+   font-family: var(--font-display);
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5 {
+   font-family: var(--font-headings);
+}
+h1, h2 {
+   font-weight: bold;
+}
+h3, h4, h5 {
+   font-weight: 600;
+}
+
+/* DISPLAY */
+.display {
+   font-family: 'Inter', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.display.big {
+   font-size: 32pt;
+}
+.display.small {
+   font-size: 16pt;
+}
+.display.caption {
+   font-size: 14pt;
+}
+
+/* BUTTONS */
+input[type=button], button {
+   margin: 1em;
+   padding: 1em 2em;
+   position: relative;
+   display: inline-flex;
+   flex-direction: row;
+   text-align: center;
+   justify-content: center;
+   border: none;
+   border-radius: 0.5em;
+   font-family: var(--font-display);
+   font-weight: bold;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: 0.25s;
+}
+input[type=button].primary, button.primary,
+input[type=button].secondary, button.secondary{
+   box-shadow: var(--shadow-lvl1);
+}
+input[type=button].primary, button.primary{
+   background-color: var(--primary-main);
+   color: var(--text-primary);
+}
+input[type=button].secondary, button.secondary{
+   background-color: var(--secondary-main);
+   color: var(--background-paper);
+}
+input[type=button].primary:hover, button.primary:hover,
+input[type=button].primary:focus, button.primary:focus,
+input[type=button].secondary:hover, button.secondary:hover,
+input[type=button].secondary:focus, button.secondary:focus {
+   box-shadow: var(--shadow-lvl2);
+}
+input[type=button].primary:hover, button.primary:hover,
+input[type=button].primary:focus, button.primary:focus{
+   background-color: var(--primary-dark);
+}
+input[type=button].primary:active, button.primary:active{
+   background-color: var(--primary-light);
+}
+input[type=button].secondary:hover, button.secondary:hover,
+input[type=button].secondary:focus, button.secondary:focus{
+   background-color: var(--secondary-dark);
+}
+input[type=button].secondary:active, button.secondary:active{
+   background-color: var(--secondary-light);
+   color: var(--text-primary);
+}
+
+a {
+   text-decoration: none;
+   font-weight: 500;
+}
+
+/* NAV BAR */
+header {
+   padding: 15px 15px;
+   background-color: transparent;
+   display: flex;
+   justify-content:space-between;
+   position: sticky;
+}
+header .navbar{
+   padding: 0px 20px; 
+   list-style-type: none;
+   display: flex;
+   align-items: center; 
+   text-align: right;
+   font-size: 1.25rem;
+}
+.LogoTipe{
+   margin: 0 0;
+   padding: 0 0;
+   scale: 0.7 0.7;
+}
+
+.navselec{
+   padding: 0px 20px; 
+   text-decoration: none;
+   color: var(--text-primary);
+}
+
+/* HOME */
+
+main {
+   position: relative;
+}
+
+/* Call to action */
+
+.joinBox {
+   padding: 20px ;
+   margin-right: 5%;
+   margin-top: 7%;
+   background-color:var(--background-paper);
+   border: 0.2px transparent black;
+   border-radius: 16pt;
+   display: inline-flex;
+   flex-direction: column;
+   width: 400px;
+   height: fit-content;
+   cursor: default;
+   box-shadow: var(--shadow-lvl2);
+   transition: 0.25s;
+}
+.joinBox:hover {
+   box-shadow: var(--shadow-lvl3);
+}
+.joinBox h1{
+   color: var(--text-primary);
+   font-size: 30px;
+   text-align: center;
+}
+
+.color-sky{
+   color: var(--secondary-main);
+}
+.color-yellow{
+   color: var(--primary-dark);
+}
+
+.calltoaction {
+   display: flex;
+   justify-self: start;
+   justify-content:space-between;
+   align-items: flex-start;
+}
+.calltoaction img {
+   padding: 0% 12%;
+   width:64%;
+   height: auto;
+   transition: 0.25s;
+}
+.calltoaction img:hover {
+   transform: scale(105%);
+}
+
+/* Prototype */
+.prototype {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.prototype .screens {
+   position: relative;
+   height: 1024pt;
+   width: 512pt;
+   margin-left: -15%;
+}
+.prototype .screens img {
+   position: absolute;
+   width: 100%;
+   transition: 0.25s;
+   filter: drop-shadow( var(--shadow-lvl1) );
+}
+.prototype .screens img:hover {
+   filter: drop-shadow( var(--shadow-lvl2) );
+   transform: translateY(-16pt) scale(105%);
+}
+.prototype .screens img:first-child { margin-top: 16pt; }
+.prototype .screens img:nth-child(2) { margin-top: calc(256pt - 32pt); }
+.prototype .screens img:nth-child(3) { margin-top: calc(512pt - 64pt); }
+.prototype .screens img:nth-child(4) { margin-top: calc(768pt - 96pt); }
+.prototype .screens img:nth-child(2n-1) { margin-left: 15%;}
+.prototype .decoration {
+   position: absolute;
+   bottom: 0px;
+   right: 10%;
+}
+
+/* Contactanos */
+.frase {
+   margin-top: 120px;
+   text-align: center;
+   font-size: 28px;
+}
+.social p {
+   font-size: 30px;
+   font-weight: 700;
+}
+.contactanos p {
+   
+}
+
+.contactanos .row .column{
+   display: inline-block;
+   width: 30%;
+   vertical-align: middle;
+}
+.contactanos .social {
+   align-items: center;
+   text-align: center;
+}
+.linksredes i {
+   margin: 5px 10px;
+   font-size: 45px;
+   color: var(--text-primary);
+   transition: 0.25s;
+}
+.linksredes i:hover {
+   color: var(--secondary-dark);
+}
+
+/* FOOTER */
+footer {
+   background-color: #F3F3F4;
+   padding: 10px 5%;
+}
+
+footer > div {
+   display: inline-block;
+   vertical-align: middle;
+   width: 30%;
+}
+footer .logo { 
+   text-align: left;
+}
+footer .derechos{
+   text-align: center;
+}
+
+footer .terminos{
+   text-align: end;
+}

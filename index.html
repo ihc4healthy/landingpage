@@ -3,52 +3,70 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="content-language" content="es">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Landing</title>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-   <link rel="stylesheet" href="styles.css">
+   <meta name="description" content="Aplicación para mejorar tus hábitos saludables.">
+   <meta name="keywords" content="habitos, salud, app">
+   <title>4Healty</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
       <!--NAVBAR-->
    <header>
        <!--Logo-->
-      <img src="resource/LogoTipe.png" alt="Logo4Healthy" class="LogoTipe">
+      <img src="assets/LogoTipe.png" alt="Logo4Healthy" class="LogoTipe">
       <ul class="navbar">
         <li><a href=""class="navselec">Nosotros</a></li>
-        <li><a href=""class="navselec">Contactános</a></li>
+        <li><a href="#why"class="navselec">Porqué nosotros</a></li>
+        <li><a href="#contacto"class="navselec">Contactános</a></li>
         <li><a href=""class="navselec">Blog</a></li>
       </ul>
    </header>
 
 
   <!-- CONTENEDOR-->
-  <div class="cont1">
-   <!--Imagen (3 fotos)-->
-      <div class="img-per">
-      <img src="resource/3imghome.png" alt="GrupoReferencia"> 
-      </div>
-   <!--Cuadro y Boton-->   
-     <div class="joinBox">
-        <h1>Sé un <span class="color-sky">healtier</span> y haz del <span class="color-yellow">bienestar</span> un hábito</h1>
-        <input type="button" value="PRUEBA 4HEALTHY">
-     </div>
-  </div>
+   <main>
+      <section class="calltoaction">
+         <!--Imagen (3 fotos)-->
+            <div class="img-per">
+            <img src="assets/3imghome.png" alt="GrupoReferencia"> 
+            </div>
+         <!--Cuadro y Boton-->   
+         <div class="joinBox">
+            <h1>Sé un <span class="color-sky">healtier</span> y haz del <span class="color-yellow">bienestar</span> un hábito</h1>
+            <button class="primary">PRUEBA 4HEALTHY</button>
+         </div>
+      </section>
 
       <section class="about">
 
       </section>
-      <section class="why">
+
+      <section class="why" id="why">
+
 
       </section>
+
       <section class="prototype">
-
+         <img class="decoration" src="assets/vectors/exercicse1.svg" alt="persona ejercitandose"/>
+         <div class="screens">
+            <img src="assets/screens/Screen1.png" alt="subir de nivel"/>
+            <img src="assets/screens/Screen2.png" alt="registrar habito"/>
+            <img src="assets/screens/Screen3.png" alt="explorar clases"/>
+            <img src="assets/screens/Screen4.png" alt="estadisticas"/>
+         </div>
       </section>
-      <section class="contactanos">
+
+      <section class="contactanos" id="contacto">
          <p class="frase">¡Empieza hoy mismo tu viaje <br/> hacia un estilo de vida más saludable!</p>
          <div class="row">
             <div class="column exercise">
-               <img src="resource/exercise.svg" alt="chica haciendo ejercicio" width="359">
+               <img src="assets/exercise.svg" alt="chica haciendo ejercicio" width="359">
             </div>
             <div class="column social">
                <p>Contáctanos</p>
@@ -60,15 +78,15 @@
                </div>
             </div>
             <div class="column saludable">
-               <img class="saludable" src="resource/saludable.svg" alt="chica comiendo saludable" width="309">
+               <img class="saludable" src="assets/saludable.svg" alt="chica comiendo saludable" width="309">
             </div>
          </div>
       </section>
 
-   </div>
+   </main>
    <footer>
       <div class="logo">
-         <img src="resource/LogoTipe.png" alt="Logo" height="57">
+         <img src="assets/LogoTipe.png" alt="Logo" height="57">
       </div>
       <div class="derechos">
          <p>Derechos reservados ©</p>
