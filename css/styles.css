@@ -300,7 +300,6 @@ footer .terminos{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
 }
 .right-side {
     flex: 1;
@@ -308,13 +307,16 @@ footer .terminos{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
 }
 .question {
-    font-size: 50px;
+    font-size: 30pt;
     text-align:center;
 }
-
+.logo-image {
+   width: 400px;
+   height: auto;
+   margin-left: 150pt;
+}
 .person-image {
     max-width: 100%;
     height: 400px;
@@ -322,6 +324,6 @@ footer .terminos{
 }
 .list {
     text-align: justify;
-    font-size: 30px;
+    font-size: 20pt;
     width: 60%;
 }
