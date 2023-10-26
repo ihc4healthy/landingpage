@@ -39,7 +39,7 @@
          <!--Cuadro y Boton-->   
          <div class="joinBox">
             <h1>Sé un <span class="color-sky">healtier</span> y haz del <span class="color-yellow">bienestar</span> un hábito</h1>
-            <button class="primary">PRUEBA 4HEALTHY</button>
+            <button id="primaryButton" class="primary">PRUEBA 4HEALTHY</button>
          </div>
       </section>
 
@@ -47,7 +47,7 @@
 
       </section>
 
-      <section class="why">
+      <section class="why" id="why">
          <div class="container">
             <div class="left-side">
                <div class="question">¿Por qué <br> <img src="assets/LogoTipe.png" alt="Logo de tu empresa" class="logo-image">?</div>
@@ -88,10 +88,10 @@
             <div class="column social">
                <p>Contáctanos</p>
                <div class="linksredes">
-                  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.tiktok.com/@4healthy02"><i class="fa-brands fa-tiktok"></i></a>
+                  <a href="https://www.instagram.com/4healthy29/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/@4Healthy312"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=61552594270528"><i class="fa-brands fa-facebook"></i></a>
                </div>
             </div>
             <div class="column saludable">
@@ -114,5 +114,10 @@
       </div>
    </footer>
    <script src="https://kit.fontawesome.com/d8eec48948.js" crossorigin="anonymous"></script>
+   <script>
+      document.getElementById('primaryButton').addEventListener('click', function() {
+          window.location.href = 'https://ihc4healthy.github.io/4healthyapp/#/signin';
+      });
+      </script>
 </body>
 </html>
