@@ -313,7 +313,7 @@ footer .terminos{
     text-align:center;
 }
 .logo-image {
-   width: 400px;
+   width: 300px;
    height: auto;
    margin-left: 150pt;
 }
@@ -326,4 +326,16 @@ footer .terminos{
     text-align: justify;
     font-size: 20pt;
     width: 60%;
+}
+
+.text {
+    text-align: justify;
+    font-size: 19pt;
+    width: 60%;
+}
+
+.bicycle-image {
+    max-width: 100%;
+    height: 600px;
+    width: 600px;
 }
